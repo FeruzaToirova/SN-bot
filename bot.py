@@ -2113,11 +2113,15 @@ What would you like to edit?
         afternoon_row1 = []
         afternoon_row1.append({"text": "12:00", "callback_data": "time_quick_12_0"})
         afternoon_row1.append({"text": "12:30", "callback_data": "time_quick_12_30"})
+        afternoon_row1.append({"text": "13:00", "callback_data": "time_quick_12_30"})
+        afternoon_row1.append({"text": "13:30", "callback_data": "time_quick_12_30"})
         afternoon_row1.append({"text": "14:00", "callback_data": "time_quick_14_0"})
         afternoon_row1.append({"text": "14:30", "callback_data": "time_quick_14_30"})
         keyboard.append(afternoon_row1)
         
         afternoon_row2 = []
+        afternoon_row1.append({"text": "15:00", "callback_data": "time_quick_12_30"})
+        afternoon_row1.append({"text": "15:30", "callback_data": "time_quick_12_30"})
         afternoon_row2.append({"text": "16:00", "callback_data": "time_quick_16_0"})
         afternoon_row2.append({"text": "16:30", "callback_data": "time_quick_16_30"})
         afternoon_row2.append({"text": "18:00", "callback_data": "time_quick_18_0"})
