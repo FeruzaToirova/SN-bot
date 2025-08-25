@@ -2113,19 +2113,25 @@ What would you like to edit?
         afternoon_row1 = []
         afternoon_row1.append({"text": "12:00", "callback_data": "time_quick_12_0"})
         afternoon_row1.append({"text": "12:30", "callback_data": "time_quick_12_30"})
-        afternoon_row1.append({"text": "13:00", "callback_data": "time_quick_12_30"})
-        afternoon_row1.append({"text": "13:30", "callback_data": "time_quick_12_30"})
-        afternoon_row1.append({"text": "14:00", "callback_data": "time_quick_14_0"})
-        afternoon_row1.append({"text": "14:30", "callback_data": "time_quick_14_30"})
+        afternoon_row1.append({"text": "13:00", "callback_data": "time_quick_13_0"})
+        afternoon_row1.append({"text": "13:30", "callback_data": "time_quick_13_30"})
+        
         keyboard.append(afternoon_row1)
+
+        afternoon_row3 = []
+  
+        afternoon_row3.append({"text": "14:00", "callback_data": "time_quick_14_0"})
+        afternoon_row3.append({"text": "14:30", "callback_data": "time_quick_14_30"})
+        afternoon_row3.append({"text": "15:00", "callback_data": "time_quick_15_0"})
+        afternoon_row3.append({"text": "15:30", "callback_data": "time_quick_15_30"})
+        keyboard.append(afternoon_row3)
         
         afternoon_row2 = []
-        afternoon_row1.append({"text": "15:00", "callback_data": "time_quick_12_30"})
-        afternoon_row1.append({"text": "15:30", "callback_data": "time_quick_12_30"})
+        
         afternoon_row2.append({"text": "16:00", "callback_data": "time_quick_16_0"})
         afternoon_row2.append({"text": "16:30", "callback_data": "time_quick_16_30"})
-        afternoon_row2.append({"text": "18:00", "callback_data": "time_quick_18_0"})
-        afternoon_row2.append({"text": "18:30", "callback_data": "time_quick_18_30"})
+        afternoon_row2.append({"text": "17:00", "callback_data": "time_quick_17_0"})
+        afternoon_row2.append({"text": "17:30", "callback_data": "time_quick_17_30"})
         keyboard.append(afternoon_row2)
         
         # Quick time buttons - Evening
@@ -2143,7 +2149,7 @@ What would you like to edit?
         keyboard.append(evening_row2)
         
         # Fine adjustment row (only if not using quick time)
-        quick_times = [8, 9, 10, 11, 12, 14, 16, 18, 20, 21, 22]
+        quick_times = [8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 20, 21, 22]
         quick_minutes = [0, 30]
         if hour not in quick_times or minute not in quick_minutes:
             adjust_row = []
